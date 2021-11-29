@@ -19,9 +19,16 @@
 const app = new Vue ({
     el: '#root',
     data: {
-
+        toboos: [
+            'Prova 1',
+            'Prova 2',
+            'Prova 3',
+        ],
+        inputTobo: ''
     },
     methods: {
-
+addTobo: function () {
+    alert("ciao");
+}
     }
 });

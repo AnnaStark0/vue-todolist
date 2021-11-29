@@ -24,9 +24,13 @@
 <!--MAIN-->
 <main>
     <div class="container">
-        <div class="tobooCont">
+        <div class="add">
+<input type="text" placeholder="Inserisci elemento" v-model="inputTobo">
+<button @click="addTobo">Aggiungi</button>
+        </div>
+        <div class="tobooCont"> 
             <ul>
-                <li> <span>Siediti</span>  <i class="fas fa-times"></i></li>
+                <li v-for="tobo in toboos"> <span>{{tobo}}</span>  <i class="fas fa-times"></i></li>
 
             </ul>
 
