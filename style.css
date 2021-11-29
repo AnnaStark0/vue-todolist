@@ -26,3 +26,19 @@ background-color: #dedede;
 border-radius: 10px;
 padding: 20px;
 }
+
+.tobooCont ul {
+    list-style: none;
+}
+
+.tobooCont li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    padding: 5px 0;
+    font-size: 20px;
+}
+
+.tobooCont li:not(:last-child) {
+    border-bottom: 1px solid grey;
+}
