@@ -30,13 +30,13 @@
         </div>
         <div class="tobooCont"> 
             <ul>
-                <li v-for="tobo in toboos"> <span>{{tobo}}</span>  <i class="fas fa-times"></i></li>
+                <li v-for="(tobo, index) in toboos"> <span>{{tobo}}</span>  <i class="fas fa-times" @click="remove(index)"></i></li>
 
             </ul>
 
         </div>
     </div>
-
+ 
 </main>
 </div>
 <!--///MAIN-->

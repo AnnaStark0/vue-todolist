@@ -16,19 +16,25 @@
 // 2- cliccando sul testo dell'item, invertire il valore della proprietà done del todo corrispondente 
 // (se done era uguale a false, impostare true e viceversa)
 
-const app = new Vue ({
+const app = new Vue({
     el: '#root',
     data: {
         toboos: [
-            'Prova 1',
+            'Prova 1',  
             'Prova 2',
             'Prova 3',
         ],
         inputTobo: ''
     },
     methods: {
-addTobo: function () {
-    alert("ciao");
-}
+        addTobo: function () {
+            if (this.inputTobo != "") {
+                this.toboos.push(this.inputTobo);
+                this.inputTobo = "";
+            }
+        },
+        remove: function(index) {
+this.toboos.splice(index, 1); 
+        }
     }
 });
